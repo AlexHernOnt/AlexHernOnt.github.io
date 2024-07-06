@@ -14,21 +14,23 @@
 	</head>
 	<body class="is-preload">
 
+
+        
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Potfolio de Alejandro Hernández</a></h1>
+						<h1><a href="index.html">Portfolio de Alejandro Hernández</a></h1>
 						<nav>
-							<a href="#menu">Menu</a>
+							<a href="#menu">Menú</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
 						<div class="inner">
-							<h2>Menu</h2>
+							<h2>Menú</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="index.html#four">Proyectos</a></li>
@@ -44,21 +46,37 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Metro Last Paint</h2>
-								<p>Un juego de estrategia sobre gestionar tu base espacial con un toque de humor. Desarrollado en Unreal y será publicado en Steam.</p>
+								<h2>Metro: Last Paint</h2>
+								<p>Un juego de terror en primera persona donde escaparás de una estación de metro abandonada. Desarrollado en Unreal Engine.</p>
 
 							</div>
 						</header> 
 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
 
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
                                     
                                     <h3 class="major">Descripción</h3>
-									<p>En esta aventura podrás desarrollar tu base espacial, expandirla, alimentar a tus trabajadores, explorar el planeta y mucha más, acompañado de carismáticos y adorables personajes 
+									<p>Embárcate en una experiencia de terror psicológico en primera persona con gráficos realistas. Asumes el papel de Mike, un grafitero intrépido que se infiltra en el metro con la intención de pintar un vagón. Sin embargo, pronto descubrirás que no está solo...
                                     </p>
                                     
+                                    <p>
+                                    Explora caminando... o corriendo un metro abandonado, escapa de una persona encapuchada que te persigue, encuentra la llave de la garita de seguridad y consigue salir ileso de esta pesadilla.
+                                    </p>
+
                                     <center>        
                                         <video width="1212" height="680"  controls autoplay muted loop>
                                             <source src="images/MetroLastPaint/FullWalkthrough-MetroLastPaint.mp4" type=video/mp4>
@@ -72,16 +90,13 @@
 
                                     
                                     <h3 class="major">Mi aportación</h3>
-									<p>A nivel individual, mi participación en el proyecto ha sido como programador y diseñador.A nivel de diseño, participé principalmente en las primeras etapas del desarrollo del juego. Colaboré en establecer las bases del juego, la creación de las mecánicas iniciales, la selección de materiales y, en menor medida, en la historia.</p>
+                                    <p>A nivel individual asumí el rol de programación. Realizé los comportamientos de las puertas, los triggeres de los textos y principalmente el comportamiento de la IA del enemigo.    </p>
+                                    
+                                    
+                                    <p>El enemigo tenía tres fases distintas, cada una con sus comportamientos. Haciendo que tuviese una patruya, que al ver al jugador lo persiga, y al perderle regresará a hacer su  patrulla. Y en la fase final, cambiar de posición, aprir una puerta y perseguir al jugador hasta la salida.
+                                    </p>
 
-                                    <p>También, en la etapa final del diseño, participé en el diseño de los datos, cantidades y de los detalles finales sobre la gestión de edificios. 
-                                    Contribuí realizando tareas de QA y proporcionando comentarios sobre el estado del juego, especialmente en lo relacionado con las cantidades y los datos.</p>
-
-                                    <p>En programación, he desarrollado los sistemas de IA de los NPCs, que consiste en el movimiento de los personajes, su interacción con el usuario y con los edificios, haciendo que estos produzcan recursos, que se pongan enfermos, mueran o se duerman.</p>
-
-                                    <p>También realicé los edificios, que producen recursos, el sistema de electricidad que nutre a estos edificios de energía, el sistema de selección y posición de edificios, el sistema de diálogos, el sistema de investigación, la guía del jugador en el tutorial entre otros… </p>
-
-                                    <div class="col-12"><span class="image fit"><img src="images/PlanetParadise/PlanetParadiseScreenshoot_cover.png" alt="Gameplay del juego Planet Paradise" /></span></div>
+                                    <div class="col-12"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot13_MetroLastPaint.png" alt="Gameplay del juego Planet Paradise" /></span></div>
                                     
 
                                 
@@ -90,35 +105,30 @@
 
                                    
                                     <h3 class="major">Programación</h3>
-									<p>La programación llevó alrededor de 230 horas. Dado el número de sistemas, debugging y aprendizaje de herramientas y flujos de trabajo.</p>
-                                    <p>Las herramientas utilizados fueron Unreal Engine 5 y Draw.io para la creación de diagramas de flujo.</p>
+									<p>La programación llevó alrededor de 75 horas. Fue dificil,  porque al ser en 3D, los comportamientos en el terreno podían fallar y había que ajustar mucho el terreno y los props. Otro reto fue hacer que se comportse de forma humana, sus reacciones, movimientos debían de ser creibles.</p>
                                     
-                                    <p>En este ejemplo de la programación del juego se muestra la máquina de estados que regula el comportamientos del movimiento de los NPCs.
-                                        Dependiendo de el objetivo que tiene en ese momento se redirije a 3 posibles estados: Trabajar, ir a casa o ir a dar un paseo. En cada una de las posibilidades se comprueba que ese punto esté disponible y sino corrigiendo el objetivo, finalmente se llama a la función "Follow Dot" que hará avanzar al NPC hasta el vector objetivo asignado.
-                                        
+                                    <p>Las herramientas utilizados fueron Unreal Engine 5, Unreal Engine Blueprints y Draw.io para la creación de diagramas de flujo.</p>
                                     
-                                    </p>
+                                    <p>En esta foto se muestra un ejemplo del código. En esta se muestra cuando el jugador pasa un checkpoint y se crea una barrera natural entre él y el enemigo. El enemigo se detiene, se gira para mirar al jugador, cambia su animación, espera un momento y luego regresa a su punto de partida, cambiando nuevamente su animación a correr. El objetivo de esta secuencia es darle al enemigo un comportamiento más humano.</p>
 
                                     
-                                    <div class="col-12"><span class="image fit"><img src="images/PlanetParadise/Code1.png" alt="" /></span></div>
+                                    <div class="col-12"><span class="image fit"><img src="images/MetroLastPaint/MetroCode2.png" alt="" /></span></div>
 								
                                     
                                     <h3 class="major">Nuestro equipo</h3>
-									<p>Este equipo lo tuvimos durante un año, colaboramos parte del grado de Gráfico para las ilustraciones y parte de Diseño de Videojuegos. En mi opinion trabajamos mucho y con una estructura solida que nos permitio compenetrar nuestro trabajo y construir uno encima del otro, y no es fácil ya que es un proyecto complejo con mucho contenido.</p>
+									<p>Desarrollamos este proyecto con un equipo nuevo donde al principio no nos conocíamos. Trabajamos todos juntos para completar el proyecto y nos esforzamos en aprender Unreal Engine, que era nuevo para nosotros en ese momento. Nos apoyamos mutuamente para lograr completar este proyecto. <p>
                                         
-                                    <p>Creo que el ambiente de trabajo y la convivencia fueron estupendos y nos lo pasamos bien trabajando, nos apoyamos mutuamente y tuvismos mucha empatia entre nosotros. En nustros proyectos aportamos nuestras habilidades y mejoramos contínuamente. </p>
-
 									<section>
 										<h3 class="major">Galería</h3>
 										<div class="box alt">
 											<div class="row gtr-uniform">
-												<div class="col-12"><span class="image fit"><img src="images/PlanetParadise/Screenshot7_PlanetParadise.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/PlanetParadise/Screenshot1_PlanetParadise.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/PlanetParadise/Screenshot2_PlanetParadise.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/PlanetParadise/Screenshot3_PlanetParadise.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/PlanetParadise/Screenshot4_PlanetParadise.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/PlanetParadise/Screenshot5_PlanetParadise.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/PlanetParadise/Screenshot6_PlanetParadise.png" alt="" /></span></div>
+												<div class="col-12"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot7_MetroLastPaint.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot1_MetroLastPaint.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot2_MetroLastPaint.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot6_MetroLastPaint.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot13_MetroLastPaint.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot7_MetroLastPaint.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/MetroLastPaint/ScreenShot9_MetroLastPaint.png" alt="" /></span></div>
 
 											</div>
 										</div>                                    
@@ -131,14 +141,14 @@
                                     
                                 -->
 
-                                    <h3 class="major">Otros juegos</h3>
                                     
+                                    <h3 class="major">Otros juegos</h3>
 									<section class="features">
 										<article>
-											<a href="el_cid_cabalga_de_nuevo.html" class="image"><img src="images/16_9_cid.jpg" alt="" /></a>
-											<h3 class="major">El cid cabalga de nuevo</h3>
-											<p>El Cid se despierta en el siglo XXI, descubre que Jimena no descansa a su lado, ¿Podrá el Cid salir de esta?</p>
-											<a href="el_cid_cabalga_de_nuevo.html" class="special">Más Información</a>
+											<a href="planet_paradise.html" class="image"><img src="images/PlanetParadise/PlanetParadiseScreenshoot_cover.png" alt="" /></a>
+											<h3 class="major">Unreal Engine - Planet Paradise</h3>
+											<p>Construye, investiga, gestiona y pon a trabajar a la tripulación. ¿Podrás sobrevivir y terraformar el planeta?</p>
+											<a href="planet_paradise.html" class="special">Más Información</a>
 										</article>
 										<article>
 											<a href="cub3d.html" class="image"><img src="images/cub/pic1.png" alt="" /></a>
@@ -148,7 +158,9 @@
 											<a href="cub3d.html" class="special">Más información</a>
 										</article>
 									</section>
-
+                                    
+                                    
+                                    
 								</div>
 							</div>
 
@@ -159,7 +171,7 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Contacto</h2>
-							<p>Puedes encontrar más información sobre me o contactarme aquí.</p>
+							<p>Puedes encontrar más información sobre mí o contactarme aquí.</p>
 							<form method="post" action="https://formsubmit.co/alex.hern.ont@gmail.com" method="POST">
 								<div class="fields">
 									<div class="field">

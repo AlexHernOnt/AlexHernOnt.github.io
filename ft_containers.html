@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" href="images/pic01.jpg" type="image/icon type">
 	</head>
 	<body class="is-preload">
 
@@ -45,7 +46,7 @@
 						<header>
 							<div class="inner">
 								<h2>C++ ft_containers</h2>
-                                <p>Proyecto de C++ que consiste en reprogramar las estructuras de datos de la Standard Template Library.</p>
+                                <p>Proyecto de C++ que consiste en programar desde cero las estructuras de datos de la Standard Template Library.</p>
 
 							</div>
 						</header> 
@@ -73,9 +74,8 @@
 
 									
 									<h3 class="major">Mi aportación</h3>
-									<p>Este fue un proyecto individual, por tanto yo realizé el programa y su arquitectura.</p>                                  
-									<p>&nbsp </p>
-									<div class="col-12"><span class="image fit"><img src="images/cub/pic2.png" alt="" /></span></div>
+									<p>Este fue un proyecto individual, por tanto realizé el programa y su arquitectura. Contiene los contenedores de datos Map, Vector, Stack y Map. Tiene sus iteradores y sus iteradores reversos, todas sus funciones y sobrecargas.</p>                                  
+									<div class="col-12"><span class="image fit"><img src="images/ft_containers/Screenshot_containers1.png" alt="" /></span></div>
 									
 
 								
@@ -84,31 +84,41 @@
 
 								   
 									<h3 class="major">Programación</h3>
-									<p>Este proyecto fue realizado durante 2 meses, 7 horas al día 6 diás a la semana aproximádaente, por tanto llevó alrededor de 340 horas. La parte más ya que es un programa muy complejo, con muchas matemáticas y cálculos.</p>
-									<p>En esta foto se ve una función del programa. En ella se muestra como funciona la parte del raycasting horizontal.</p>
+									<p>Este proyecto fue realizado durante 2 meses, dedicando aproximadamente 7 horas al día, 6 días a la semana, por tanto llevó alrededor de 340 horas. La parte más desafiante fue conseguir superar todos los tests, ya que necesitas fortalecer mucho tu código para poder superar correctamente todo tipo de inputs, incluso algunos casos extremos que tienen como objetivo romper el código.</p>
+                                    
+                                    <p>Aún así, fue un gran reto y fue muy satisfactorio conseguir escribir código sobre una feature tan central a c++ y a tan bajo nivel, además de crear tu propio Binary Tree funcional con todas sus finciones de búsqueda, eleminiación y remplazo. Este es uno de los conceptos más populares dentro del mundo de la programación, y poder escribirlo con código de buena calidad es muy satisfactorio.
 
-									
-									<div class="col-12"><span class="image fit"><img src="images/cub/pic5.png" alt="" /></span></div>
+
+                                    
+                                    <h3 class="major">Ejemplo de código</h3>
+
+                                    <p>En esta foto se ve una función del programa. En ella se muestra cómo funciona la parte de detectar el próximo número mayor en un Binary Tree. Primero se comprueba si hay un nodo a su derecha, aquí estaría por defecto el siguiente número más grande en el árbol. Por tanto, se busca el más pequeño de esa rama, y si lo encontraramos, usaríamos una función específica que nos encuentra el valor mínimo de una rama, min_value_node.</p>
+                                    
+                                    <p>Si no tiene nodo a la derecha, se hará un bucle subiendo en la rama a través de los padres con el objetivo de encontrar un número más grande que el nodo dado. Al encontrarlo, se devuelve un punturo a este nodo. En caso de no haber más nodos hacia arriba de la rama, se devuelve el nodo root. Un detalle es que la función está adaptada para funcionar con otros compraradores, aunque aquí hemos descrito como si se usara el mayor que ('>'), pero funcionaría con un menor qué u otro comprarador.</p>
+
+                                    
+                                    
+									<div class="col-12"><span class="image fit"><img src="images/ft_containers/Example_containers.png" alt="" /></span></div>
 								
 									
 									<section>
-										<h3 class="major">Image</h3>
+										<h3 class="major">Galería</h3>
 										<div class="box alt">
 											<div class="row gtr-uniform">
-												<div class="col-12"><span class="image fit"><img src="images/cub/pic1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src= "images/cub/pic2.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src= "images/cub/pic3.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src= "images/cub/pic4.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src= "images/cub/pic4.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src= "images/cub/pic1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src= "images/cub/pic2.png" alt="" /></span></div>
+												<div class="col-12"><span class="image fit"><img src="images/ft_containers/Screenshot_containers2.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src= "images/ft_containers/Screenshot_containers3.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src= "images/ft_containers/Screenshot_containers4.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src= "images/ft_containers/Screenshot_containers6.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src= "images/ft_containers/Screenshot_containers7.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src= "images/ft_containers/Screenshot_containers8.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src= "images/ft_containers/Screenshot_containers9.png" alt="" /></span></div>
 
 											</div>
 										</div>                                    
 									</section>
 
 												<ul class="actions stacked">
-													<li><a target="_blank" href="https://github.com/AlexHernOnt/Cub3D" class="button primary fit">Ve el proyecto en Github</a></li>
+													<li><a target="_blank" href="https://github.com/AlexHernOnt/ft_containers" class="button primary fit">Ve el proyecto en Github</a></li>
 												</ul>                                    
 									
 								
